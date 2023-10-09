@@ -7,4 +7,5 @@ members = [
     "lock_and_thread",
     "macro_demo",
     "mem_mgmt",
+    "clap_practice",
 ]
