@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = [
+    "as_ref_mut",
+    "basic_data",
+    "basic_syntax",
+    "lock_and_thread",
+    "macro_demo",
+    "mem_mgmt",
+]

@@ -1,0 +1,11 @@
+[package]
+name = "basic_syntax"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "with_error"
+path = "src/with_error.rs"
+
+[dependencies]
+clap = "4.4.6"

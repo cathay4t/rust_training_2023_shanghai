@@ -1,0 +1,28 @@
+[package]
+name = "basic_data"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[[bin]]
+name = "opt"
+path = "src/opt.rs"
+
+[[bin]]
+name = "str"
+path = "src/str.rs"
+
+[[bin]]
+name = "vec"
+path = "src/vec.rs"
+
+[[bin]]
+name = "hash"
+path = "src/hash.rs"
+
+[[bin]]
+name = "int"
+path = "src/int.rs"
