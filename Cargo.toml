@@ -8,4 +8,5 @@ members = [
     "macro_demo",
     "mem_mgmt",
     "clap_practice",
+    "mpsc_demo",
 ]
