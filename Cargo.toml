@@ -12,9 +12,10 @@ members = [
     "vec_change_capacity",
     "cs_tcp",
     "smart_ptr",
-    "cs_yaml",
+    "cs_yaml_lab",
     "custom_serde",
     "logging_demo",
     "runtime_static",
     "ffi_demo",
+    "libcs_yaml",
 ]
