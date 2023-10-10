@@ -4,3 +4,5 @@ Cargo.lock
 
 */target/
 */Cargo.lock
+vec_change_capacity/a
+.~lock.*

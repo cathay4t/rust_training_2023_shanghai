@@ -1,0 +1,17 @@
+[package]
+name = "cs_tcp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = { version = "0.4.31", default-features = false, features = ["std", "clock"] }
+
+[[bin]]
+name = "cs_tcpd"
+path = "src/srv.rs"
+
+[[bin]]
+name = "cs_tcp"
+path = "src/cli.rs"

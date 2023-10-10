@@ -9,4 +9,6 @@ members = [
     "mem_mgmt",
     "clap_practice",
     "mpsc_demo",
+    "vec_change_capacity",
+    "cs_tcp"
 ]

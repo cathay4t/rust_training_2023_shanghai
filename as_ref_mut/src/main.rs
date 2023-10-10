@@ -43,4 +43,21 @@ fn main() {
     assert_eq!(map["abc"], 6);
 
     println!("Map {:?}", map);
+
+    for v in map.values_mut() {
+        *v *= 2;
+    }
+
+    println!("Map {:?}", map);
+
+    let opt_vec: Vec<Option<String>> = vec![Some("a".to_string()), None, None];
+
+    println!("Old vec {:?}", opt_vec);
+
+    let new_vec: Vec<&str> = opt_vec
+        .iter()
+        .filter_map(|i| i.as_ref().map(|i| i.as_str()))
+        .collect();
+
+    println!("New vec {:?}", new_vec);
 }
