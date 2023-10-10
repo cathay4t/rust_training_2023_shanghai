@@ -15,4 +15,5 @@ members = [
     "cs_yaml",
     "custom_serde",
     "logging_demo",
+    "runtime_static",
 ]
