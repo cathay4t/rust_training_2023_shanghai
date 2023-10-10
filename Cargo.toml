@@ -14,4 +14,5 @@ members = [
     "smart_ptr",
     "cs_yaml",
     "custom_serde",
+    "logging_demo",
 ]
