@@ -10,5 +10,6 @@ members = [
     "clap_practice",
     "mpsc_demo",
     "vec_change_capacity",
-    "cs_tcp"
+    "cs_tcp",
+    "smart_ptr",
 ]

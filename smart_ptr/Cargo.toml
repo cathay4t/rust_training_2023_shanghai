@@ -1,0 +1,25 @@
+[package]
+name = "smart_ptr"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[[bin]]
+name = "box"
+path = "src/box.rs"
+
+[[bin]]
+name = "box_rec"
+path = "src/box_rec.rs"
+
+[[bin]]
+name = "rc"
+path = "src/rc.rs"
+
+[[bin]]
+name = "ref_cell"
+path = "src/ref_cell.rs"
