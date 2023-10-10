@@ -13,4 +13,5 @@ members = [
     "cs_tcp",
     "smart_ptr",
     "cs_yaml",
+    "custom_serde",
 ]
