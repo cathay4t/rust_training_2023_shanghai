@@ -5,7 +5,7 @@ mod error;
 mod info;
 mod logger;
 
-use std::ffi::{c_char, CStr, CString};
+use std::ffi::{c_char, CString};
 use std::time::SystemTime;
 
 use once_cell::sync::OnceCell;

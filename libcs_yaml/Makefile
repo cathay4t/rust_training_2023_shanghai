@@ -23,6 +23,7 @@ debug:
 	cc -g -Wall -Wextra -L$(TMPDIR) -I$(TMPDIR) \
 		-o $(TMPDIR)/cs_yaml_test tests/cs_yaml_test.c -lcs_yaml
 	$(SRV_PATH) &
+	sleep 1
 	LD_LIBRARY_PATH=$(TMPDIR) \
 		$(TMPDIR)/cs_yaml_test
 	rm -rf $(TMPDIR)
@@ -43,6 +44,7 @@ clib_check: $(CLIB_SO_DEV_DEBUG) $(CLIB_HEADER)
 	cc -g -Wall -Wextra -L$(TMPDIR) -I$(TMPDIR) \
 		-o $(TMPDIR)/cs_yaml_test tests/cs_yaml_test.c -lcs_yaml
 	$(SRV_PATH) &
+	sleep 1
 	LD_LIBRARY_PATH=$(TMPDIR) \
 		valgrind --trace-children=yes --leak-check=full \
 		--error-exitcode=1 \
