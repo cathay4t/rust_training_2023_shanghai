@@ -23,3 +23,7 @@ path = "src/rc.rs"
 [[bin]]
 name = "ref_cell"
 path = "src/ref_cell.rs"
+
+[[bin]]
+name = "deref"
+path = "src/deref.rs"
