@@ -16,4 +16,5 @@ members = [
     "custom_serde",
     "logging_demo",
     "runtime_static",
+    "ffi_demo",
 ]
