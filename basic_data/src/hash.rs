@@ -33,8 +33,8 @@ fn main() {
     println!("BTreeMap Keys {:?}", keys);
     println!("BTreeMap Keys by ref {:?}", keys_ref);
 
-    let keys: Vec<String> = set_a.drain().collect();
     let keys_ref: Vec<&str> = set_a.iter().map(String::as_str).collect();
+    let keys: Vec<String> = set_a.drain().collect();
 
     println!("HashSet Keys {:?}", keys);
     println!("BTreeMap Keys by ref {:?}", keys_ref);

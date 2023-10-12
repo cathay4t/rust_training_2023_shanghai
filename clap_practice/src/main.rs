@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 
-const SUBCOMMAND_A: &'static str = "subcommand_a";
+const SUBCOMMAND_A: &str = "subcommand_a";
 const SUBCOMMAND_B: &'static str = "subcommand_b";
 const SUBCOMMAND_C: &'static str = "subcommand_c";
 

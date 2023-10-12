@@ -1,0 +1,45 @@
+[package]
+name = "hello"
+version = "0.1.0"
+authors = ["Gris Ge <fge@redhat.com>"]
+edition = "2021"
+
+[[bin]]
+name = "simple_foobar"
+path = "simple_foobar.rs"
+
+[[bin]]
+name = "wrong_async_sleep"
+path = "wrong_async_sleep.rs"
+
+[[bin]]
+name = "correct_async_sleep"
+path = "correct_async_sleep.rs"
+
+[[bin]]
+name = "async_sleep_thread"
+path = "async_sleep_thread.rs"
+
+[[bin]]
+name = "async_sleep_executor"
+path = "async_sleep_executor.rs"
+
+[[bin]]
+name = "get_devconf_web_title"
+path = "get_devconf_web_title.rs"
+
+[features]
+smol = []
+
+[dependencies]
+async-std = { version = "1.12.0", features = ["attributes"]}
+futures = "0.3.28"
+nix = "0.26.2"
+smol = "1.3.0"
+reqwest = { version = "0.11", features = ["json"] }
+
+[dependencies.tokio]
+version = "1.25"
+features = ["macros", "rt-multi-thread", "net", "time"]
+
+

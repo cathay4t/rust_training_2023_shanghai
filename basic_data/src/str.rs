@@ -2,6 +2,9 @@
 
 fn main() {
     let str_a = "abc";
+    let part_a = &str_a[1..];
+    println!("HAHA {:?}", part_a);
+    println!("HAHA {:?}", part_a.len());
     let mut string_a = "ab".to_string();
     string_a.push('c');
 

@@ -32,16 +32,10 @@ fn count_odd(data: &[u16]) -> Result<usize, AbcError> {
     }
 }
 
-fn main() -> Result<(), Box<dyn std::error::Error>> {
+fn main() {
     let a = vec![1u16, 2, 3, 4];
 
     let count = count_odd(&a)?;
 
-    println!(
-        "Got {} odd number{}",
-        count,
-        if count > 1 { "s" } else { "" }
-    );
-
-    Ok(())
+    println!("Got {:?}", count);
 }

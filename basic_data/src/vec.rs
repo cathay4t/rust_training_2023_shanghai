@@ -20,7 +20,7 @@ fn main() {
 
     let simple_data = [1u8, 2, 3];
     let opt_data = Some(simple_data.to_vec());
-    let opt_data2: Vec<u16> = simple_data.iter().map(|i| (*i).into()).collect();
+    let opt_data2: Vec<u16> = simple_data.iter().map(|i| (*i).into()).collect::<T>();
     // let expected = Some(simple_data);
     let expected = Some(simple_data.as_slice());
     assert_eq!(opt_data.as_deref(), expected);
