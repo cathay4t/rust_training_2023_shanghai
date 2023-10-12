@@ -5,8 +5,8 @@ mod do_something;
 use crate::do_something::DoSomething;
 
 fn main() {
-    //init_env_logger();
-    init_syslog_logger();
+    init_env_logger();
+    //init_syslog_logger();
     DoSomething::run();
 }
 

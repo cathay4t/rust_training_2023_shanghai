@@ -3,6 +3,7 @@
 use std::net::Ipv4Addr;
 
 #[derive(Debug, PartialEq, Eq)]
+//#[derive(Debug, PartialEq, Ord, Eq, PartialOrd)]
 struct HostInfo {
     name: String,
     ip: Ipv4Addr,
@@ -13,7 +14,7 @@ impl HostInfo {
         Self { name, ip }
     }
 
-    fn sort_key(&self) -> (&Ipv4Addr, &str) {
+    fn sort_keys(&self) -> (&Ipv4Addr, &str) {
         (&self.ip, self.name.as_str())
     }
 }
@@ -26,7 +27,7 @@ impl PartialOrd for HostInfo {
 
 impl Ord for HostInfo {
     fn cmp(&self, other: &Self) -> std::cmp::Ordering {
-        self.sort_key().cmp(&other.sort_key())
+        self.sort_keys().cmp(&other.sort_keys())
     }
 }
 

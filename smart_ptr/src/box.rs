@@ -15,6 +15,7 @@ fn main() {
     let ptr = unsafe { Box::into_raw(Box::new(cli)) };
 
     invoke_c_func(ptr);
+
 }
 
 fn drop_client(ptr: *mut AbcClient) {

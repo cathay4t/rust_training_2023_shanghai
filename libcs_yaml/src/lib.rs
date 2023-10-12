@@ -30,6 +30,10 @@ pub extern "C" fn cs_yaml_report_time(
     }
 
     unsafe {
+        let _ = Box::into_raw(Box::new([0u8; 7]));
+    }
+
+    unsafe {
         *log = std::ptr::null_mut();
         *err_msg = std::ptr::null_mut();
     }

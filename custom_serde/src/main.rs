@@ -179,6 +179,7 @@ fn main() {
         ],
     };
     println!("Serialize\n{}", serde_yaml::to_string(&foos).unwrap());
+    println!("Serialize JSON\n{}", serde_json::to_string(&foos).unwrap());
 
     let foos: Foos = serde_yaml::from_str(
         r#"---

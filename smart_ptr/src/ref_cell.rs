@@ -33,5 +33,5 @@ fn main() {
     println!("b: {:?}", b);
     println!("c: {:?}", c);
 
-    // could_panic();
+    could_panic();
 }
