@@ -1,0 +1,20 @@
+[package]
+name = "day2_tasks"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[[bin]]
+name = "task1"
+path = "src/task1.rs"
+
+[[bin]]
+name = "task2"
+path = "src/task2.rs"
+
+[[bin]]
+name = "task3"
+path = "src/task3.rs"

@@ -21,4 +21,5 @@ members = [
     "rust_async_workshop",
     "test_demo",
     "from_demo",
+    "day2_tasks",
 ]
