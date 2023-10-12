@@ -20,7 +20,7 @@ fn main() {
         HostInfo::new("hosta".into(), Ipv4Addr::new(127, 0, 0, 1)),
         HostInfo::new("hostc".into(), Ipv4Addr::new(129, 0, 0, 1))];
 
-    // Sort by IP address first, then name.
+    // Optinal(hard) task: Sort by IP address first, then name.
     a.dedup();
     a.sort_unstable();
     println!("HAHA {:?}", a);
