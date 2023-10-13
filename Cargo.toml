@@ -26,4 +26,5 @@ members = [
     "user",
     "libz-sys",
     "use_clib",
+    "day3_tasks",
 ]
