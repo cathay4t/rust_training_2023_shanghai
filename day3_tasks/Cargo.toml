@@ -14,3 +14,7 @@ path = "src/task1.rs"
 [[bin]]
 name = "task2"
 path = "src/task2.rs"
+
+[[bin]]
+name = "task3"
+path = "src/task3.rs"
